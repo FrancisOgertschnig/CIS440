@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Project</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<!--<script type="text/javascript" src="script.js"></script>-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function () {
+			$('#enterprise').click(function() {
+				$('.decloak').trigger('play');
+				$('#klingon').fadeIn('slow');
+				
+				$('.red_alert').trigger('play');
+				$('#photon').delay(3000).animate({
+				right:'1500px',
+				opacity:'1',
+				height: '90',
+				width: '90'
+				}, 1800);
+				$('#enterprise').delay(2800).animate({
+				'margin-left': '+=1000', 'margin-top': '+=1000'
+				}, 1200);
+				
+				function volumeDown(){
+    					var volume = $(".red_alert").prop("volume")-0.2;
+    					if(volume <0){
+        				volume = 0;
+    				}
+    				$(".red_alert").prop("volume",volume);
+				}
+			});
+		}); 
+		</script>
+	</head>
+	<body>
+		<audio class="bridge" autoplay >
+			<source src="tos_bridge_2.mp3" type="audio/mpeg">
+		</audio>
+		<audio class="decloak">
+			<source src="decloak_romulan.mp3" type="audio/mpeg">
+		</audio>
+		<audio class="red_alert">
+			<source src="tos_red_alert.mp3" type="audio/mpeg">
+		</audio>
+		<div id="go">
+			<img src="Klingon_Bird-of-Prey.jpg" height="200" width="300" id="klingon">
+			<img src="photon_torpedo.jpg" height="40" width="40" id="photon">
+		</div><br/>
+		<div>
+			<img src="enterprise.jpg" height="200" width="300" id="enterprise">
+		</div>
+		<!--<div class="photon">
+			<img src="photon_torpedo.jpg" height="40" width="40">
+		</div>-->
+	</body>
+</html>                                
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            

@@ -1,0 +1,28 @@
+body {
+	background-image: url('http://hetlage.com/images/m46m47_021005_large.jpg');
+}                               
+                            
+#enterprise {
+	top: 0;
+	right: 0%;
+}
+
+#klingon {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0%;
+	
+}
+                   
+#photon {
+	display: none;
+	position: absolute;
+	top: 5%;
+	right: 300px;
+}         
+                            
+.audioDemo {
+	display: none;
+}     
+                            
